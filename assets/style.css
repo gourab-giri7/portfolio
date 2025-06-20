@@ -355,7 +355,7 @@ a{
 
                         /* for tabs */
 
-@media(min-width:480px)and(max-width:768px){
+@media(min-width:480px) and (max-width:768px){
 .nav-text{
     width: 70%;
     gap: 20px;
