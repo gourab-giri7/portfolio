@@ -409,6 +409,18 @@ a{
 .line{
     width: 80%;
 }
+.cline{
+    width: 75%;
+}
+.htmlline{
+    width: 80%;
+}
+.cssline{
+    width: 70%;
+}
+.jsline{
+    width: 30%;
+}
 .project-items{
     flex-wrap: wrap;
     gap: 20px;
@@ -419,7 +431,7 @@ a{
     background-size: contain;
 }
 .contact{
-   /* height: 100%; */
+    margin-top:5vh ;
    justify-content: center;
    gap: 20px;
 }
