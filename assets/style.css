@@ -137,16 +137,16 @@ a{
     height: 20px;
     background-color: #06f7ff;
     border-radius: 10px;
-    width: 20%;
+    width: 90%;
 }
 .htmlline{
-    width: 10%;
+    width: 85%;
 }
 .cssline{
-    width: 10%;
+    width: 70%;
 }
 .jsline{
-    width: 10%;
+    width: 30%;
 }
 
 
@@ -210,9 +210,7 @@ a{
     font-weight: bold;
     color: white;
     text-align: center;
-    /* animation-name: text;
-    animation-duration: 8s;
-    animation-delay: 0s; */
+    
 }
 /* @keyframes text{
     from{
@@ -321,6 +319,18 @@ a{
 }
 .line{
     width: 80%;
+}
+.cline{
+    width: 80%;
+}
+.htmlline{
+    width: 85%;
+}
+.cssline{
+    width: 70%;
+}
+.jsline{
+    width: 30%;
 }
 .project-items{
     flex-wrap: wrap;
