@@ -1,0 +1,423 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.main{
+    background-color: black; 
+    width: 100%;
+}
+                    /* Nav👇 */
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: transparent;
+}
+.logo{
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+.nav-text{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.nt:hover{
+    border-bottom: 3px solid #06f7ff;
+}
+
+                    /* Hero 👇*/
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    margin-bottom: 10vh;
+}
+/* .photo{
+    height: 90vh;
+} */
+.text h1{font-size: 50px;}
+
+.hero .text h1 span{
+    color: #06f7ff;
+}
+
+                        /* About me */
+
+.about-me{
+    height:75vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    margin-bottom: 10vh;
+}
+.about-me .text{
+    width: 50%;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 35px;
+}
+.about-me .text h1{
+        margin-bottom: 5vh;
+}
+.aphoto{
+    height: 60vh;
+}
+
+            /* skil */
+
+.skills{
+    height: 50vh;
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 8vh 0;
+}
+.skills .h1, .project-text, .contact-text{
+    /* height: 20vh; */
+    width: 100%;
+    text-align: center;
+    color: #06f7ff;
+    font-size: 50px;
+
+}
+.percentage ,.project-items{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 100;
+}
+.left ,.right{
+    /* height: 100%; */
+    width: 40%;
+    color: white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 20px;
+    position: relative;
+    background-color: black;
+    z-index: -2;
+}
+.line{
+    height: 20px;
+    width: 100%;
+    background-color: #797979;
+    position: absolute;
+    border-radius: 10px;
+    z-index: -1;
+}
+.cline, .htmlline, .cssline, .jsline{
+    height: 20px;
+    background-color: #06f7ff;
+    border-radius: 10px;
+    width: 20%;
+}
+.htmlline{
+    width: 10%;
+}
+.cssline{
+    width: 10%;
+}
+.jsline{
+    width: 10%;
+}
+
+
+                        /* Projects */
+
+.projects{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 5vh;
+}
+.box{
+    height: 80%;
+    width: 20%;
+    background-color: #7a7a7a;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.box1{
+     background-image: url(blinkit-logo.webp);
+     background-repeat: no-repeat;
+     background-position: center;
+}
+.box2{
+     background-image: url(wizard.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+}
+.box3{
+     background-image: url(Calculator.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+}
+.box4{
+     background-image: url(pngegg.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+}
+.box span{
+    color: transparent;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    font-size: 30px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.box span:hover{
+    background-image:linear-gradient(rgba(109, 109, 109, 0.445) 10% ,rgba(0, 0, 0, 0.74)90% );
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    /* animation-name: text;
+    animation-duration: 8s;
+    animation-delay: 0s; */
+}
+/* @keyframes text{
+    from{
+        position: relative;
+        bottom: 0px;
+    }
+    to{
+    position: relative;
+       top: 0px;
+    }
+} */
+
+
+                            /* Contact */
+
+.contact{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+.links{
+    /* height: 75%; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+
+    font-size: 50px;
+}
+/* i{
+    color: white;
+} */
+
+                /* copyright */
+
+.copyright{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+
+
+
+
+
+                    /* for phones */
+
+@media(max-width:480px){
+.nav-text{
+    width: 70%;
+    gap: 20px;
+}
+.photo{
+    display: none;
+}
+.hero{
+    background-image: url(gg.png);
+    background-repeat: no-repeat;
+    height: 60vh;
+    padding: 0;
+}
+.hero .text{
+    width: 100vw;
+    height: 100%;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aphoto{
+    display: none;
+}
+.about-me{
+    height:100%;
+    margin-bottom: 20px;
+}
+.about-me .text h1{margin-bottom: 20px;}
+.about-me .text{
+    width: 100%;
+    text-align: justify;
+    font-size: 25px;
+}
+.skills{
+        height: 100%;
+}
+.skills .percentage{
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+    height: 50%;
+}
+.left, .right{
+    width: 100%;
+    padding-left: 30px;
+    /* justify-content: center; */
+}
+.line{
+    width: 80%;
+}
+.project-items{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.box{
+    width: 40vw;
+    height: 20vh;
+    background-size: contain;
+}
+.contact{
+   /* height: 100%; */
+   justify-content: center;
+   gap: 20px;
+}
+.links{
+    gap: 10px;
+    font-size: 35px;
+}
+}
+
+
+                        /* for tabs */
+
+@media(min-width:480px)and(max-width:768){
+.nav-text{
+    width: 70%;
+    gap: 20px;
+}
+.photo{
+    display: none;
+}
+.hero{
+    background-image: url(gg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 60vh;
+    padding: 0;
+}
+.hero .text{
+    width: 100vw;
+    height: 100%;
+    font-size: 20px;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aphoto{
+    display: none;
+}
+.about-me{
+    height:100%;
+    margin-bottom: 20px;
+}
+.about-me .text h1{margin-bottom: 20px;}
+.about-me .text{
+    width: 100%;
+    text-align: justify;
+    font-size: 25px;
+}
+.skills{
+        height: 100%;
+}
+.skills .percentage{
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+    height: 50%;
+}
+.left, .right{
+    width: 100%;
+    padding-left: 30px;
+    /* justify-content: center; */
+}
+.line{
+    width: 80%;
+}
+.project-items{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.box{
+    width: 40vw;
+    height: 20vh;
+    background-size: contain;
+}
+.contact{
+   /* height: 100%; */
+   justify-content: center;
+   gap: 20px;
+}
+.links{
+    gap: 10px;
+    font-size: 35px;
+}
+.copyright{
+    font-size: 30px;
+}
+}
